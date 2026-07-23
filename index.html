@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ A Special Question ❤️</title>
+    <style>
+        body{
+
+margin:0;
+padding:0;
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#ff4b91,#ffb6c1);
+
+font-family:Arial,sans-serif;
+
+overflow:hidden;
+
+}
+
+.container{
+
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+
+box-shadow:0 0 30px rgba(0,0,0,.2);
+
+position:relative;
+
+}
+
+h1{
+
+color:#ff0066;
+
+}
+
+.couple{
+
+font-size:120px;
+
+margin:20px;
+
+}
+
+.line{
+
+font-size:22px;
+
+color:#444;
+
+}
+
+.buttons{
+
+margin-top:30px;
+
+}
+
+button{
+
+padding:15px 35px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+margin:15px;
+
+transition:.3s;
+
+}
+
+#yes{
+
+background:#ff0066;
+
+color:white;
+
+}
+
+#yes:hover{
+
+transform:scale(1.1);
+
+}
+
+#no{
+    background:#555;
+    color:white;
+    position:fixed;
+    transition:0.08s linear;
+    z-index:9999;
+}
+
+}
+    </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>💕 I Have Something to Ask You 💕</h1>
+
+<div class="couple">
+👨‍❤️‍👩
+</div>
+
+<p class="line">
+Every moment with you feels magical. <br>
+Will You Be My Girlfriend?  ❤️
+</p>
+
+<div class="buttons">
+
+<button id="yes" onclick="location.href='success.html'">
+YES ❤️
+</button>
+
+<button id="no">
+NO 💔
+</button>
+
+</div>
+
+</div>
+
+<script>
+const noBtn = document.getElementById("no");
+
+// Random position
+function moveButton() {
+
+    const maxX = window.innerWidth - noBtn.offsetWidth - 20;
+    const maxY = window.innerHeight - noBtn.offsetHeight - 20;
+
+    const x = Math.floor(Math.random() * maxX);
+    const y = Math.floor(Math.random() * maxY);
+
+    noBtn.style.position = "fixed";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+}
+
+// PC
+noBtn.addEventListener("mouseover", moveButton);
+noBtn.addEventListener("mouseenter", moveButton);
+
+// Mobile
+noBtn.addEventListener("touchstart", function(e){
+    e.preventDefault();
+    moveButton();
+}, {passive:false});
+
+// Agar kisi tarah click ho bhi jaye to bhi bhaag jayega
+noBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    moveButton();
+});
+
+// Shuru me bhi ek random position par bhej do
+setTimeout(moveButton, 1000);
+</script>
+
+</body>
+</html>
