@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Congratulations ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top,#ff4d8d 0%,#9b005d 35%,#3a003f 70%,#120018 100%);
+}
+
+.box{
+
+    width:90%;
+    max-width:600px;
+
+    text-align:center;
+
+    padding:50px 35px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 0 35px rgba(255,20,147,.35),
+    0 25px 60px rgba(0,0,0,.45);
+
+    animation:fadeUp 1s ease;
+}
+
+h1{
+
+    font-size:55px;
+
+    color:#fff;
+
+    text-shadow:
+    0 0 10px hotpink,
+    0 0 25px deeppink,
+    0 0 45px #ff1493;
+
+    animation:heartbeat 1.4s infinite;
+}
+
+p{
+
+    margin-top:25px;
+
+    font-size:24px;
+
+    line-height:1.8;
+
+    color:white;
+
+    opacity:.95;
+}
+
+.heart{
+
+    font-size:90px;
+
+    margin-bottom:25px;
+
+    animation:heartbeat 1.2s infinite;
+
+    filter:drop-shadow(0 0 25px hotpink);
+}
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 45px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:20px;
+
+    background:linear-gradient(45deg,#ff006a,#ff4da6);
+
+    box-shadow:0 0 25px hotpink;
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 40px hotpink;
+}
+
+@keyframes heartbeat{
+
+0%,100%{
+transform:scale(1);
+}
+
+25%{
+transform:scale(1.12);
+}
+
+50%{
+transform:scale(.98);
+}
+
+75%{
+transform:scale(1.1);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<div class="heart">💖</div>
+
+<h1>Congratulations!</h1>
+
+<p>
+
+You Said <b>YES</b> ❤️<br><br>
+
+Today is the beginning of our beautiful love story.<br>
+
+May our journey always be filled with happiness, trust and endless love. 💕
+
+</p>
+
+<a href="#" class="btn">❤️ Forever Together ❤️</a>
+
+</div>
+
+</body>
+</html>
